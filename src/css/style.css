@@ -1,0 +1,364 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: '幼圆';
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  position: relative;
+}
+
+.homeBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.homeBox img {
+  width: 100%;
+  height: 480px;
+}
+
+.homeBox .bottom {
+  width: 70%;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.homeBox .bottom ul {
+  display: inline-block;
+  width: 33.3%;
+  height: 100%;
+  border-right: 1px solid #ccc;
+}
+
+.homeBox .bottom ul li {
+  width: 100%;
+  position: relative;
+}
+
+.homeBox .bottom ul li p {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #25bcf1;
+}
+
+.homeBox .bottom ul li img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  transform: translate(50%, 3%);
+}
+
+.homeBox .bottom ul li > a {
+  width: 180px;
+  height: 58px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #25bcf1;
+  position: absolute;
+  transform: translate(40%, 50%);
+  color: #fff;
+  display: block;
+  line-height: 58px;
+  text-align: center;
+}
+
+.homeBox .bottom ul:nth-last-child(1) {
+  border-right: none;
+}
+
+.homeBox .top {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+
+.homeBox .top a {
+  width: 80px;
+  height: 36px;
+  background: #fff;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 3% 5%;
+  text-align: center;
+  line-height: 36px;
+}
+
+.homeBox .top a:nth-last-child(1) {
+  background: #25bcf1;
+  color: #fff;
+}
+
+.loginBox,
+.registerBox {
+  width: 1000px;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  transform: translate(25%, 50%);
+  display: flex;
+}
+
+.loginBox img,
+.registerBox img {
+  float: left;
+}
+
+.loginBox .rightBox,
+.registerBox .rightBox {
+  flex: 1;
+  position: relative;
+}
+
+.loginBox .rightBox h2,
+.registerBox .rightBox h2 {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 200;
+  color: aquamarine;
+}
+
+.loginBox .rightBox p,
+.registerBox .rightBox p {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 0;
+}
+
+.loginBox .rightBox p input,
+.registerBox .rightBox p input {
+  width: 70%;
+  height: 80%;
+}
+
+.loginBox .rightBox b,
+.registerBox .rightBox b {
+  color: red;
+  font-weight: 200;
+  margin-left: 24%;
+  font-size: 14px;
+}
+
+.loginBox .rightBox button,
+.registerBox .rightBox button {
+  width: 300px;
+  height: 45px;
+  background: blue;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  left: 20%;
+  top: 63%;
+}
+
+.loginBox .rightBox a,
+.registerBox .rightBox a {
+  position: absolute;
+  right: 5%;
+  top: 80%;
+}
+
+nav {
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+nav a {
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  line-height: 3rem;
+  display: inline-block;
+  color: #000;
+  font-weight: 600;
+}
+
+nav a.active {
+  border-bottom: 2px solid #00aeef;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.wrap .slideBox {
+  width: 80px;
+  height: 100%;
+  background: #353d40;
+}
+
+.wrap .slideBox p {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 26px;
+  color: red;
+}
+
+.wrap .slideBox a {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  line-height: 60px;
+  text-align: center;
+  display: block;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.wrap .slideBox a.active {
+  color: #2BBFF3;
+}
+
+.wrap main {
+  flex: 1;
+  background: #fff;
+}
+
+.wrap main .topBox {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #eee;
+  padding-left: 3%;
+}
+
+.wrap main .content {
+  width: 100%;
+  height: 94%;
+  position: relative;
+}
+
+.wrap main .content .item {
+  float: left;
+  width: 50%;
+  height: 50%;
+  border: 1px solid #eee;
+}
+
+.wrap main .content .item:nth-child(1) {
+  border-left: 0;
+  border-top: 0;
+}
+
+.wrap main .content .item:nth-child(1) .top {
+  background: #FFEDE7;
+  color: #F76333;
+}
+
+.wrap main .content .item:nth-child(2) {
+  border-right: 0;
+  border-top: 0;
+}
+
+.wrap main .content .item:nth-child(2) .top {
+  background: #FFEFCB;
+  color: #F76333;
+}
+
+.wrap main .content .item:nth-child(3) {
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.wrap main .content .item:nth-child(3) .top {
+  background: #D6F4FE;
+  color: #3FB6DA;
+}
+
+.wrap main .content .item:nth-child(4) {
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.wrap main .content .item:nth-child(4) .top {
+  background: #EFD;
+  color: #89C557;
+}
+
+.wrap main .content .item .top {
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 2%;
+  position: relative;
+  background: pink;
+  margin: 2% auto;
+  position: relative;
+}
+
+.wrap main .content .item .top b {
+  position: absolute;
+  right: 3%;
+  top: 1%;
+  font-size: 30px;
+  color: #819298;
+  font-weight: 200;
+}
+
+.wrap main .content .item .top input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 2%;
+  width: 90%;
+  height: 100%;
+  outline: none;
+  background: palegreen;
+  border: 0;
+  border: 1px solid red;
+}
+
+.wrap main .content .item li {
+  width: 96%;
+  height: 2rem;
+  margin: 2%;
+  background: #eee;
+  line-height: 2rem;
+}
+
+.wrap main .content .item li span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+.wrap main .content .item .maskBox {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #00aeef;
+}
